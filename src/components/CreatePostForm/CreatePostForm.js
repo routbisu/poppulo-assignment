@@ -34,6 +34,12 @@ const CreatePostForm = () => {
               onChange={(evt) => setPost(evt.target.value)}
               rows={15}
             />
+            <div className="btn-section">
+              <button className="btn-primary btn-primary-outline">
+                Save Draft
+              </button>
+              <button className="btn-primary">Publish Now</button>
+            </div>
           </form>
         </div>
         <div className="right-section">

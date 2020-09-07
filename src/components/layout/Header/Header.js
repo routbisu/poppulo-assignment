@@ -7,13 +7,18 @@ import {
   faQuestionCircle,
   faCog,
   faUser,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = () => {
   return (
     <header className="main-header">
       <div className="header-wrapper">
         <div className="logo-section">
+          <div className="hamburger">
+            <FontAwesomeIcon icon={faBars} />
+          </div>
           <Logo />
           <div className="main-menu">
             {menuItems.map((menuItem) => (

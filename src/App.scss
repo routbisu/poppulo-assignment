@@ -11,3 +11,19 @@ input {
 html {
   font-size: 16px;
 }
+
+// Common styles
+.btn-primary {
+  background: $dynamic-blue;
+  border: 1px solid $dynamic-blue;
+  padding: 9px 12px;
+  font-size: 0.8rem;
+  color: $white;
+  border-radius: 3px;
+}
+
+.btn-primary-outline {
+  background: $white;
+  color: $secondary-color;
+  border: 1px solid $border-grey;
+}

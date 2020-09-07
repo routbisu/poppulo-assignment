@@ -21,6 +21,10 @@ header.main-header {
         fill: $primary-color;
       }
 
+      .hamburger {
+        display: none;
+      }
+
       .main-menu {
         margin-left: 30px;
         a {
@@ -36,10 +40,29 @@ header.main-header {
           }
         }
       }
+
+      @media screen and (max-width: 900px) {
+        .main-menu {
+          display: none;
+        }
+
+        .hamburger {
+          display: inline-block;
+          padding: 20px 25px;
+
+          svg {
+            font-size: 1.2rem;
+          }
+        }
+      }
     }
 
     .user-menu {
       display: flex;
+
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
     }
   }
 }
