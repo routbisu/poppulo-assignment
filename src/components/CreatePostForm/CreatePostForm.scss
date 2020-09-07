@@ -1,0 +1,25 @@
+@import '../../scss/variables.scss';
+
+.create-post-form {
+  max-width: 1050px;
+  margin: auto;
+  padding: 30px 20px;
+
+  h2 {
+    color: $secondary-color;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .form-body {
+    display: flex;
+
+    .left-section {
+      flex: 2;
+    }
+
+    .right-section {
+      flex: 1;
+    }
+  }
+}

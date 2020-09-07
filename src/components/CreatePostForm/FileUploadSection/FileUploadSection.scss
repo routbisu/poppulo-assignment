@@ -1,0 +1,50 @@
+@import '../../../scss/variables.scss';
+
+.file-upload-section-container {
+  .drop-section {
+    padding: 30px 20px;
+    border: 2px dashed $border-grey;
+    border-radius: 10px;
+    background: $bluish-grey-1;
+    text-align: center;
+    color: $text-grey;
+    cursor: pointer;
+
+    .upload-icon {
+      font-size: 2rem;
+    }
+
+    .label {
+      margin-top: 10px;
+      font-size: 0.75rem;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 0.75rem;
+
+      p {
+        margin-top: 9px;
+        span {
+          color: $dynamic-blue;
+        }
+      }
+    }
+  }
+
+  .drop-button {
+    padding: 20px 30px;
+    background: $bluish-grey-1;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    color: $text-grey;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    svg {
+      margin-right: 10px;
+      font-size: 0.9rem;
+    }
+  }
+}
