@@ -12,6 +12,7 @@ Because of time constraints, I kept this project minimalistic for demo purposes.
 
 - Typescript or flow (for type safety).
 - Use of styled components for better CSS styles scoping.
+- Use of better responsive styling support (on navigation menus)
 - Configure the use of multiple environments (`staging` and `production`).
 - Implement service workers to support installation & offline capabilities.
 - Write a CI/CD pipeline on Bitbucket or Gitlab or other platforms.
