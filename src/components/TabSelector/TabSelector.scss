@@ -1,0 +1,35 @@
+@import '../../scss/variables.scss';
+
+.tab-selector-container {
+  margin-top: 30px;
+  display: flex;
+
+  .item-wrapper {
+    flex: 1;
+    text-align: center;
+    color: $text-grey;
+    border-bottom: 2px solid $border-grey;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+    svg {
+      font-size: 1rem;
+    }
+
+    .label {
+      margin-top: 8px;
+      font-size: 0.68rem;
+    }
+
+    &.active,
+    &:hover {
+      svg,
+      .label {
+        color: $dynamic-blue;
+      }
+
+      transition: 0.3s;
+      border-color: $dynamic-blue;
+    }
+  }
+}
