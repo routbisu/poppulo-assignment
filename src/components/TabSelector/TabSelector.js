@@ -9,7 +9,7 @@ const TabSelector = ({ items, defaultValue, onChange }) => {
     if (onChange) {
       onChange(selected);
     }
-  }, [selected]);
+  }, [selected, onChange]);
 
   return (
     <div className="tab-selector-container">
