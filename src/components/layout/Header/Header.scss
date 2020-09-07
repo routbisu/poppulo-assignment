@@ -1,0 +1,45 @@
+@import '../../../scss/variables.scss';
+
+header.main-header {
+  background: $secondary-color;
+
+  .header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1050px;
+    margin: auto;
+    color: $white;
+    font-size: 0.9rem;
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+
+      .primary-logo {
+        height: 22px;
+        fill: $primary-color;
+      }
+
+      .main-menu {
+        margin-left: 30px;
+        a {
+          padding: 15px;
+          color: $white;
+          font-size: 0.8rem;
+
+          &.active,
+          &:hover {
+            background: $primary-color;
+            transition: 0.3s;
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+
+    .user-menu {
+      display: flex;
+    }
+  }
+}

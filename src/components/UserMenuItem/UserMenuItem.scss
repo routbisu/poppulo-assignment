@@ -1,0 +1,32 @@
+@import '../../scss/variables.scss';
+
+.user-menu-item-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+
+  &:hover {
+    background: $primary-color;
+    transition: 0.3s;
+    color: $secondary-color;
+  }
+
+  svg {
+    font-size: 0.8rem;
+  }
+
+  .label,
+  .icon-carret {
+    margin-left: 8px;
+  }
+
+  .icon-carret {
+    position: relative;
+    top: -1px;
+  }
+
+  .label {
+    font-size: 0.8rem;
+  }
+}
