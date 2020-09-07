@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './CreatePostForm.scss';
 import FileUploadSection from './FileUploadSection/FileUploadSection';
 import TextboxControl from '../TextboxControl/TextboxControl';
+import ButtonsSection from './ButtonsSection';
 
 const CreatePostForm = () => {
   const [title, setTitle] = useState(
@@ -34,16 +35,16 @@ const CreatePostForm = () => {
               onChange={(evt) => setPost(evt.target.value)}
               rows={15}
             />
-            <div className="btn-section">
-              <button className="btn-primary btn-primary-outline">
-                Save Draft
-              </button>
-              <button className="btn-primary">Publish Now</button>
+            <div className="desktop-btn-section">
+              <ButtonsSection />
             </div>
           </form>
         </div>
         <div className="right-section">
           <FileUploadSection />
+          <div className="mobile-btn-section">
+            <ButtonsSection />
+          </div>
         </div>
       </div>
     </div>

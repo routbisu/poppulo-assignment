@@ -40,4 +40,31 @@
       }
     }
   }
+
+  .desktop-btn-section {
+    display: none;
+    padding-top: 20px;
+    text-align: right;
+    button {
+      margin-left: 10px;
+    }
+  }
+
+  .mobile-btn-section {
+    padding-top: 20px;
+    text-align: right;
+    button {
+      margin-left: 10px;
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .mobile-btn-section {
+      display: none;
+    }
+
+    .desktop-btn-section {
+      display: inherit;
+    }
+  }
 }
