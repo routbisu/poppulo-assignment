@@ -1,0 +1,60 @@
+@import '../../scss/variables.scss';
+
+@mixin focussed-label-styles {
+  font-size: 0.7rem;
+  top: -2px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.textbox-control {
+  border-bottom: 2px solid $border-grey;
+  background: $bluish-grey-1;
+  padding-top: 13px;
+  margin-bottom: 40px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+  .textbox-wrapper {
+    position: relative;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px 10px;
+      background: transparent;
+      position: relative;
+      z-index: 200;
+      font-size: 0.8rem;
+
+      &:focus {
+        + .label {
+          @include focussed-label-styles();
+        }
+      }
+    }
+
+    .label {
+      position: absolute;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      top: 15px;
+      left: 10px;
+      transform: translateY(-50%);
+      transition: 0.3s;
+      z-index: 100;
+
+      &.focussed {
+        @include focussed-label-styles();
+      }
+    }
+
+    .length-container {
+      position: absolute;
+      bottom: -18px;
+      left: 10px;
+      font-size: 0.7rem;
+      opacity: 0.7;
+    }
+  }
+}
